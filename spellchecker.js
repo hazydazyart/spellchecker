@@ -18,12 +18,6 @@ function edit_distance_1(word) {
         results.push(word.slice(0, i) + letter + word.slice(i));
       });
 
-      // check for letter missing from end of word as well
-      letters.forEach(function(letter) {
-        results.push(word + letter);
-      });
-    }
-
     // alteration
     for (var i = 0; i < word.length; i++) {
       letters.forEach(function(letter) {
